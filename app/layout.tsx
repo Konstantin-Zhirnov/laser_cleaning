@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     title: 'Laser Cleaning Services | Vancouver Island',
     description:
       'Professional on-site laser rust and paint removal for businesses and residential clients on Vancouver Island.',
-    url: 'https://laser-cleaning-jl9n.vercel.app/',
+    url: 'https://laser-cleaning.ca',
     siteName: 'LaserClean Pro',
     images: [
       {
-        url: 'https://laser-cleaning-jl9n.vercel.app/images/og-image.jpg',
+        url: 'https://laser-cleaning.ca/images/og-image.jpg',
         width: 1200,
         height: 800,
       },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Laser Cleaning Services | Vancouver Island',
     description: 'On-site laser rust and paint removal for businesses and homeowners.',
-    images: ['https://laser-cleaning.ca/og-image.jpg'],
+    images: ['https://laser-cleaning.ca/images/og-image.jpg'],
   },
 }
 

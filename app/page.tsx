@@ -14,8 +14,8 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Laser Cleaning',
-    image: 'https://laser-cleaning-jl9n.vercel.app/images/og-image.jpg',
-    url: 'https://laser-cleaning-jl9n.vercel.app',
+    image: 'https://laser-cleaning.ca/images/og-image.jpg',
+    url: 'https://laser-cleaning.ca',
     telephone: '+1-250-797-2834',
     description:
       'Professional laser cleaning services for local businesses and homeowners on Vancouver Island. Rust removal, paint stripping, grease and surface restoration without chemicals or surface damage.',
