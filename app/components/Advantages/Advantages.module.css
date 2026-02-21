@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    background: #161b22;
+    padding: 3rem 0 7rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    display: grid
+}
+
