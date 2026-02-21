@@ -13,12 +13,29 @@ export default function Home() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'LaserClean Pro',
-    description: 'Industrial laser rust removal and surface cleaning services in Canada.',
-    areaServed: 'Canada',
-    geo: { '@type': 'GeoCoordinates', latitude: 43.65107, longitude: -79.347015 },
-    serviceType: 'Industrial Laser Cleaning Services',
-    url: 'https://laser-cleaning.ca',
+    name: 'Laser Cleaning',
+    image: 'https://laser-cleaning-jl9n.vercel.app/images/og-image.jpg',
+    url: 'https://laser-cleaning-jl9n.vercel.app',
+    telephone: '+1-250-797-2834',
+    description:
+      'Professional laser cleaning services for local businesses and homeowners on Vancouver Island. Rust removal, paint stripping, grease and surface restoration without chemicals or surface damage.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Vancouver Island',
+      addressRegion: 'BC',
+      addressCountry: 'CA',
+    },
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'Vancouver Island, British Columbia',
+    },
+    serviceType: [
+      'Laser rust removal',
+      'Paint removal',
+      'Surface preparation',
+      'Graffiti removal',
+      'Grease and oil cleaning',
+    ],
   }
 
   return (

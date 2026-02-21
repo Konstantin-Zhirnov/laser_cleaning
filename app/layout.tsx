@@ -6,22 +6,29 @@ import { Header } from './components/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Industrial Laser Cleaning Services | LaserClean Pro',
+  title: 'Laser Cleaning Services in Vancouver Island | Rust & Paint Removal',
   description:
-    'Professional laser rust removal and industrial surface cleaning without chemicals or abrasives in Canada.',
+    'Mobile laser cleaning services for local businesses and homeowners on Vancouver Island. Rust removal, paint stripping, and surface restoration — no chemicals, no damage.',
   openGraph: {
-    title: 'Industrial Laser Cleaning Services | LaserClean Pro',
-    description: 'Professional laser rust removal and surface cleaning.',
-    url: 'https://laser-cleaning.ca',
+    title: 'Laser Cleaning Services | Vancouver Island',
+    description:
+      'Professional on-site laser rust and paint removal for businesses and residential clients on Vancouver Island.',
+    url: 'https://laser-cleaning-jl9n.vercel.app/',
     siteName: 'LaserClean Pro',
-    images: [{ url: 'https://laser-cleaning.ca/og-image.jpg', width: 1200, height: 630 }],
+    images: [
+      {
+        url: 'https://laser-cleaning-jl9n.vercel.app/images/og-image.jpg',
+        width: 1200,
+        height: 800,
+      },
+    ],
     locale: 'en_CA',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Industrial Laser Cleaning Services',
-    description: 'Laser rust removal & industrial cleaning Canada',
+    title: 'Laser Cleaning Services | Vancouver Island',
+    description: 'On-site laser rust and paint removal for businesses and homeowners.',
     images: ['https://laser-cleaning.ca/og-image.jpg'],
   },
 }
