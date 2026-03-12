@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import { Header } from './components/Header'
 
@@ -40,6 +41,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
 
         {children}
+
+        <GoogleTagManager gtmId="AW-17852461067" />
       </body>
     </html>
   )
