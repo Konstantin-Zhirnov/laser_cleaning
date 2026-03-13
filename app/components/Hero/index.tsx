@@ -1,7 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-import cn from 'classnames'
 import { motion } from 'framer-motion'
 
 import styles from './Hero.module.css'
@@ -10,7 +8,7 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <video autoPlay loop muted playsInline className={styles.video}>
-        <source src="/video/laser.mp4" type="video/mp4" />
+        <source src="/video/laser-cleaning.mp4" type="video/mp4" />
       </video>
 
       <div className={styles.gradient} />
