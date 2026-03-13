@@ -11,6 +11,14 @@ import styles from './Header.module.css'
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false)
 
+  const sendConversion = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17852461067/rDeFCOm4v4ccEIvg28BC',
+      })
+    }
+  }
+
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50)
@@ -26,7 +34,7 @@ export const Header = () => {
       <Wrapper classes={styles.wrapper}>
         <Image src="/images/logo.png" alt="logo" width={130} height={59} />
 
-        <a className={styles.phone} href="tel:2507972834">
+        <a className={styles.phone} href="tel:2507972834" onClick={sendConversion}>
           250.797.2834
         </a>
 
