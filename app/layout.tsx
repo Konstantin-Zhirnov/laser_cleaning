@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
-import Script from 'next/script'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { Header } from './components/Header'
 
@@ -38,25 +38,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics gaId="AW-17852461067" />
+
         <Header />
 
         {children}
-
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17852461067"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-tag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('js', new Date());
-            gtag('config', 'AW-17852461067');
-          `}
-        </Script>
       </body>
     </html>
   )
