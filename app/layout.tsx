@@ -7,11 +7,11 @@ import { Header } from './components/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Laser Cleaning Services in Vancouver Island | Rust & Paint Removal',
+  title: 'Laser Cleaning Services | Rust & Paint Removal',
   description:
     'Mobile laser cleaning services for local businesses and homeowners on Vancouver Island. Rust removal, paint stripping, and surface restoration — no chemicals, no damage.',
   openGraph: {
-    title: 'Laser Cleaning Services | Vancouver Island',
+    title: 'Laser Cleaning Services | Rust & Paint Removal',
     description:
       'Professional on-site laser rust and paint removal for businesses and residential clients on Vancouver Island.',
     url: 'https://laser-cleaning.ca',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Laser Cleaning Services | Vancouver Island',
+    title: 'Laser Cleaning Services | Rust & Paint Removal',
     description: 'On-site laser rust and paint removal for businesses and homeowners.',
     images: ['https://laser-cleaning.ca/images/og-image.jpg'],
   },
