@@ -20,7 +20,8 @@ export const Card: FC<IProps> = ({ i, component, children }) => {
   return (
     <motion.div
       className={styles.card}
-      initial={{ opacity: 0, y: initialY }}
+      // initial={{ opacity: 0, y: initialY }}
+      initial={{ opacity: 0, translateY: initialY }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={transition}
