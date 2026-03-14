@@ -7,6 +7,9 @@
     border: 1px solid rgba(255,255,255,0.05);
     padding: 25px;
     transition: all 0.4s ease;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .card:hover {

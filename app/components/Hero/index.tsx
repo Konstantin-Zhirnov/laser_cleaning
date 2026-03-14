@@ -7,7 +7,7 @@ import styles from './Hero.module.css'
 export const Hero = () => {
   return (
     <section className={styles.container}>
-      <video autoPlay loop muted playsInline className={styles.video}>
+      <video autoPlay loop muted playsInline poster="/images/bg.jpg" className={styles.video}>
         <source src="/video/laser-cleaning.mp4" type="video/mp4" />
       </video>
 

@@ -19,13 +19,12 @@ export const Card: FC<IProps> = ({ i, component, children }) => {
 
   return (
     <motion.div
-      key={i}
       className={styles.card}
       initial={{ opacity: 0, y: initialY }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={transition}
-      whileHover={{ scale: 1.05, boxShadow: '0 10px 25px rgba(0,224,255,0.4)' }}
+      whileHover={{ scale: 1.05 }}
     >
       {children}
     </motion.div>
