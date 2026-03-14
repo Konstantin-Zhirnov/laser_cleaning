@@ -23,7 +23,7 @@ export const Purpose = () => {
 
         <div className={styles.grid}>
           {apps.map((app, i) => (
-            <Card key={i} i={i} component="Applications">
+            <Card key={app.title} i={i} component="Applications">
               <img src={app.img} alt={app.title} className={styles.img} />
 
               <p className={styles.text}>{app.title}</p>

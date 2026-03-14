@@ -20,7 +20,7 @@ export const Advantages = () => {
 
         <div className={styles.grid}>
           {advantages.map((item, i) => (
-            <Card key={i} i={i} component="Advantages">
+            <Card key={item} i={i} component="Advantages">
               <p className={styles.text}>{item}</p>
             </Card>
           ))}
