@@ -12,6 +12,8 @@
 
 .text {
     text-align: center;
+    padding: 25px;
+    margin: auto;
 }
 
 .grid {

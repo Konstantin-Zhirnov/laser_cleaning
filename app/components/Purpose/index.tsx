@@ -4,15 +4,15 @@ import { Card } from '../Card'
 import styles from './Purpose.module.css'
 
 const apps = [
-  { title: 'Auto repair & body shops', img: '/images/auto_repair.png' },
-  { title: 'Contractors & builders', img: '/images/contractors.png' },
-  { title: 'Property maintenance companies', img: '/images/property.png' },
-  { title: 'Small manufacturing shops', img: '/images/small_shops.png' },
-  { title: 'Restoration workshops', img: '/images/restoration.png' },
-  { title: 'Equipment owners', img: '/images/equipment.png' },
-  { title: 'Food processing facilities', img: '/images/food.png' },
-  { title: 'Marine & boat maintenance', img: '/images/marine.png' },
-  { title: 'Residential property owners', img: '/images/owners.png' },
+  { title: 'Auto repair & body shops', img: '/images/auto_repair.webp' },
+  { title: 'Contractors & builders', img: '/images/contractors.webp' },
+  { title: 'Property maintenance companies', img: '/images/property.webp' },
+  { title: 'Small manufacturing shops', img: '/images/small_shops.webp' },
+  { title: 'Restoration workshops', img: '/images/restoration.webp' },
+  { title: 'Equipment owners', img: '/images/equipment.webp' },
+  { title: 'Food processing facilities', img: '/images/food.webp' },
+  { title: 'Marine & boat maintenance', img: '/images/marine.webp' },
+  { title: 'Residential property owners', img: '/images/residential_owners.webp' },
 ]
 
 export const Purpose = () => {
