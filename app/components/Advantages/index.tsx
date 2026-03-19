@@ -1,5 +1,8 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 import { Wrapper } from '../Wrapper'
-import { Card } from '../Card'
 
 import styles from './Advantages.module.css'
 
@@ -20,9 +23,17 @@ export const Advantages = () => {
 
         <div className={styles.grid}>
           {advantages.map((item, i) => (
-            <Card key={item} i={i} component="Advantages">
+            <motion.div
+              key={item}
+              className={styles.card}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+            >
               <p className={styles.text}>{item}</p>
-            </Card>
+            </motion.div>
           ))}
         </div>
       </Wrapper>

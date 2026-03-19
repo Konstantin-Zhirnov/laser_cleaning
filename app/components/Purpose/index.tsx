@@ -1,5 +1,8 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 import { Wrapper } from '../Wrapper'
-import { Card } from '../Card'
 
 import styles from './Purpose.module.css'
 
@@ -23,11 +26,19 @@ export const Purpose = () => {
 
         <div className={styles.grid}>
           {apps.map((app, i) => (
-            <Card key={app.title} i={i} component="Applications">
+            <motion.div
+              key={app.title}
+              className={styles.card}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.15, duration: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+            >
               <img src={app.img} alt={app.title} className={styles.img} />
 
               <p className={styles.text}>{app.title}</p>
-            </Card>
+            </motion.div>
           ))}
         </div>
       </Wrapper>
