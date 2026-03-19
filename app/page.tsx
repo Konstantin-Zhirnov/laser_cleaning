@@ -8,6 +8,7 @@ import { WhyChooseUs } from './components/WhyChooseUs'
 import { Process } from './components/Process'
 import { ServiceArea } from './components/ServiceArea'
 import { FinalCTA } from './components/FinalCTA'
+import { Showcase } from './components/Showcase'
 
 export default function Home() {
   const schema = {
@@ -62,6 +63,8 @@ export default function Home() {
       <Process />
 
       <ServiceArea />
+
+      <Showcase />
 
       <FinalCTA />
     </>
