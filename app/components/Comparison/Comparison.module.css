@@ -64,14 +64,14 @@
 
 .check {
     color: #00ffb2;
-    font-size: 20px;
-    margin-top: 4px;
+    display: flex;
+    align-items: center;
 }
 
 .cross {
     color: #ff5c5c;
-    font-size: 20px;
-    margin-top: 4px;
+    display: flex;
+    align-items: center;
 }
 
 

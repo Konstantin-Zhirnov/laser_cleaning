@@ -41,7 +41,18 @@ export const Comparison = () => {
                 transition={{ delay: i * 0.15 }}
                 viewport={{ once: true }}
               >
-                <span className={styles.check}>✔</span>
+                <span className={styles.check}>
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      d="M20 6L9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
 
                 <div>
                   <strong>{item.param}</strong>
@@ -64,7 +75,17 @@ export const Comparison = () => {
                 transition={{ delay: i * 0.15 }}
                 viewport={{ once: true }}
               >
-                <span className={styles.cross}>✖</span>
+                <span className={styles.cross}>
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
 
                 <div>
                   <strong>{item.param}</strong>
