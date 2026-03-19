@@ -33,7 +33,7 @@ export const Purpose = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              // whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05 }}
             >
               <img src={app.img} alt={app.title} className={styles.img} />
 
