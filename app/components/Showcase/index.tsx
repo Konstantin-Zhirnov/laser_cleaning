@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 import { Wrapper } from '../Wrapper'
 
 import styles from './Showcase.module.css'
@@ -18,7 +22,16 @@ export const Showcase = () => {
 
         <div className={styles.grid}>
           {images.map((item, i) => (
-            <img src={item} className={styles.img} alt="laser cleanning" />
+            <motion.div
+              key={i}
+              className={styles.step}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <img src={item} className={styles.img} alt="laser cleanning" />
+            </motion.div>
           ))}
         </div>
       </Wrapper>
