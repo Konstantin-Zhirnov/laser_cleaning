@@ -24,7 +24,7 @@ export const Card: FC<IProps> = ({ i, component, children }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={transition}
-      whileHover={{ scale: 1.05 }}
+      // whileHover={{ scale: 1.05 }}
     >
       {children}
     </motion.div>
