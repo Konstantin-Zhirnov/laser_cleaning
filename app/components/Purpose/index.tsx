@@ -29,11 +29,11 @@ export const Purpose = () => {
             <motion.div
               key={app.title}
               className={styles.card}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15, duration: 0.6 }}
-              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
+              // whileHover={{ scale: 1.05 }}
             >
               <img src={app.img} alt={app.title} className={styles.img} />
 
