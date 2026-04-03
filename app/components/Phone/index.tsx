@@ -3,20 +3,8 @@
 import styles from './Phone.module.css'
 
 export const Phone = () => {
-  const handleClick = () => {
-    if (typeof window.gtag !== 'function') return
-
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-17852461067/y9yqCOuDx4ccEIvg28BC',
-      value: 1.0,
-      currency: 'CAD',
-    })
-
-    window.location.href = 'tel:+12507972834'
-  }
-
   return (
-    <a onClick={handleClick} href="tel:+12507972834" className={styles.btn}>
+    <a href="tel:2508025654" className={styles.btn}>
       <svg
         fill="currentColor"
         viewBox="0 0 512 512"

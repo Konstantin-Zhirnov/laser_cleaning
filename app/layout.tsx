@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { Header } from './components/Header'
 import { Phone } from './components/Phone'
@@ -39,8 +38,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <GoogleAnalytics gaId="AW-17852461067" />
-
         <Header />
 
         {children}

@@ -12,7 +12,7 @@ export const FinalCTA = () => {
         </p>
 
         <a
-          href="mailto:kostya.zhirnov@gmail.com?subject=Laser%20Cleaning"
+          href="mailto:westpointwest1979@gmail.com?subject=Laser%20Cleaning"
           className={styles.button}
         >
           Request Your Free Estimate
